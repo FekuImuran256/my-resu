@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+        .container {
+        @apply grid grid-cols-1 md:grid-cols-[30%_70%] max-w-6xl mx-auto bg-white shadow-lg rounded-xl overflow-hidden;
+    }
+    
+    
+    .sidebar {
+        @apply bg-gradient-to-b from-blue-900 to-blue-700 text-white p-6 md:p-8;
+    }
+    
+        .profile-section {
+        @apply text-center mb-8;
+    }
+    
+    .profile-img {
+        @apply w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-4 border-4 border-blue-300 object-cover;
+    }
+    
+    .profile-section h1 {
+        @apply text-xl md:text-2xl font-bold mb-2;
+    }
+    
+    .job-title {
+        @apply text-blue-200 italic text-sm md:text-base;
+    }
+    
+    
+    .sidebar h2 {
+        @apply text-lg md:text-xl font-semibold mt-6 mb-4 pb-2 border-b border-blue-500;
+    }
+    
+    
+    .contact-info {
+        @apply space-y-3;
+    }
+    
+    .contact-item {
+        @apply flex items-start gap-3;
+    }
+    
+    .contact-item i {
+        @apply text-blue-300 mt-1 w-4;
+    }
+    
+    .sidebar a {
+        @apply text-blue-100 hover:text-white break-all transition-colors duration-200;
+    }
+    
+    
+    .skills-grid {
+        @apply grid grid-cols-1 gap-4;
+    }
+    
+    .skill-category h3 {
+        @apply text-blue-200 font-medium mb-2 text-sm md:text-base;
+    }
+    
+    .sidebar ul {
+        @apply space-y-2;
+    }
+    
+    .sidebar ul li {
+        @apply flex items-start gap-2;
+    }
+    
+    .sidebar ul li i {
+        @apply text-blue-300 text-xs mt-1.5;
+    }
+    
+    
+    .achievements-section ul li {
+        @apply flex items-start gap-3 mb-3;
+    }
+    
+    .achievements-section ul li i {
+        @apply text-blue-300 mt-1;
+    }
+    
+        .main-content {
+        @apply p-6 md:p-8 space-y-8;
+    }
+    
+    .main-content h2 {
+        @apply text-xl md:text-2xl font-bold text-blue-900 mb-4 pb-2 border-b border-blue-300;
+    }
+    
+    .main-content h3 {
+        @apply text-blue-800 font-semibold text-base md:text-lg;
+    }
+    
+    
+    table {
+        @apply w-full border-collapse my-4;
+    }
+    
+    th, td {
+        @apply px-3 md:px-4 py-3 text-left border-b border-gray-200;
+    }
+    
+    th {
+        @apply bg-blue-50 font-semibold text-blue-900;
+    }
+    
+    tr {
+        @apply hover:bg-gray-50 transition-colors duration-200;
+    }
+    
+    
+    .experience-item {
+        @apply border-l-4 border-blue-500 pl-4 mb-6;
+    }
+    
+    .date {
+        @apply text-gray-600 italic text-sm mb-3;
+    }
+    
+    .main-content ul {
+        @apply space-y-2;
+    }
+    
+    .main-content ul li {
+        @apply flex items-start gap-3;
+    }
+    
+    .main-content ul li i {
+        @apply text-blue-500 mt-1;
+    }
+}
+
+
+@layer base {
+    * {
+        @apply box-border m-0 p-0;
+    }
+    
+    body {
+        font-family: 'Inter', sans-serif;
+        @apply bg-gray-100 text-gray-800 leading-relaxed p-4 md:p-8;
+    }
+    
+    a {
+        @apply no-underline;
+    }
+    
+    img {
+        @apply max-w-full h-auto;
+    }
+}
+
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
