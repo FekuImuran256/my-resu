@@ -1,0 +1,16 @@
+{
+  "name": "resume-webpage-tailwind",
+  "version": "1.0.0",
+  "description": "A responsive CV built with Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "FEKU IMURAN",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.18"
+  }
+}
